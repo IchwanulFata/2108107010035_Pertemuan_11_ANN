@@ -2,6 +2,12 @@
 ## Nama : Ichwanul Fata
 ## NPM : 2108107010035
 
+## Cara Menjalankan Kode Program
+1. Membuat virtual enviroment di dalam repository ini.
+2. Aktifkan virtual environment pada terminal dalam lingkungan kode.
+3. Install semua library yang ada dalam file requirements.txt.
+4. Jalankan semua cell yang ada pada file notebook tersebut 
+
 ## Poin 1
 ### Deskripsi Dataset
 Dataset yang digunakan terkait dengan tingkat keluarnya nasabah (churn rate) dari suatu bank di Eropa. Bank tersebut memiliki permasalahan dimana secara tiba-tiba tingkat tingkat keluarnya nasabah (churn rate) meningkat drastis. Pada data tersebut memiliki 13 kolom feature serta 1 kolom label yaitu kolom exited. Berikut penjelasan dari tiap-tiap kolom.
@@ -22,7 +28,18 @@ Dataset yang digunakan terkait dengan tingkat keluarnya nasabah (churn rate) dar
   14. Exited adalah status apakah nasabah ini tetap di bank (0) atau keluar dari bank (1).
       
 Permasalahan tersebut akan diselesaikan menggunakan salah satu algoritma klasifikasi yaitu artificial neural network (ANN).
+### Tahapan Pengerjaan
+1. Import Library
+2. Import Data
+3. Memilih Variabel X dan Y
+4. Encoding Data
+5. Splitting Data
+6. Feature Scaling
+7. Inisialisasi Model ANN
+8. Training Model ANN
+9. Testing dan Melihat Akurasi Model ANN
 
+    
 ## Poin 2
 ### ANN dan SVM
 #### Deskripsi Dataset
@@ -41,6 +58,18 @@ Dataset tersebut memiliki label yaitu pada kolom Class sedangkan kolom lainnya a
 
 Link sumber dataset : https://archive.ics.uci.edu/dataset/545/rice+cammeo+and+osmancik
 
+#### Tahapan Pengerjaan
+1. Import Library
+2. Import Data
+3. Data Preprocessing : Mengubah class menjadi numerik, handling missing value, handling outlier, handling imbalance data, dan feature scaling.
+4. Memilih Variabel X dan Y
+5. Splitting Data
+6. Inisialisasi Model ANN
+7. Training Model ANN
+8. Testing dan Melihat Akurasi Model ANN
+9. Training Model SVM
+10. Testing dan Melihat Akurasi Model SVM
+    
 #### Perbandingan Hasil Akurasi 
 Hasil akurasi menggunakan metric evaluasi akurasi setelah model selesai dibangun yaitu :
 Model ANN yang dihasilkan memiiliki akurasi sebesar 0.9243
@@ -48,20 +77,33 @@ Model SVM Linear yang dihasilkan memiliki akurasi sebesar 0.9243
 Model SVM Non-Linear yang dihasilkan memiliki akurasi sebesar 0.9251
 
 Saat sedang berlangsungnya training model ANN terdapat beberapa perubahan akurasi yaitu
+
 Epoch 7/100
+
 306/306 [==============================] - 0s 1ms/step - loss: 0.2106 - accuracy: 0.9243
+
 Epoch 8/100
+
 306/306 [==============================] - 0s 2ms/step - loss: 0.2026 - accuracy: 0.9273
+
 Epoch 9/100
+
 306/306 [==============================] - 1s 2ms/step - loss: 0.1968 - accuracy: 0.9286
+
 Epoch 10/100
+
 306/306 [==============================] - 0s 999us/step - loss: 0.1932 - accuracy: 0.9276
+
 Epoch 11/100
+
 306/306 [==============================] - 0s 732us/step - loss: 0.1892 - accuracy: 0.9318
+
 Epoch 12/100
+
 306/306 [==============================] - 0s 858us/step - loss: 0.1878 - accuracy: 0.9299
 
-Berdasarkan output tersebut dapat dilihat bahwa nilai akurasi cenderung diantaa 0.93 sehingga dapat disimpulkan bahwa model ANN memberikan akurasi yang lebih baik dibandingkan dengan SVM.
+
+Berdasarkan output tersebut dapat dilihat bahwa nilai akurasi cenderung diantara 0.93 sehingga dapat disimpulkan bahwa model ANN memberikan akurasi yang lebih baik dibandingkan dengan SVM.
 
 ### ANN dan SVR
 #### Deskripsi Dataset
@@ -84,3 +126,22 @@ Dari keseluruhan kolom yang ada pada dataset tersebut saya hanya menggunakan tig
 
 Link Sumber Dataset : https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
+#### Tahapan Pengerjaan
+1. Import Library
+2. Import Data
+3. Data Preprocessing : Handling missing value, handling imbalance data, dan feature scaling.
+4. Memilih Variabel X dan Y
+5. Splitting Data
+6. Inisialisasi Model ANN
+7. Training Model ANN
+8. Testing dan Melihat MSE Model ANN
+9. Training Model SVR
+10. Testing dan Melihat MSE Model SVR
+    
+#### Perbandingan Hasil Akurasi 
+Hasil akurasi menggunakan metric evaluasi MSE setelah model selesai dibangun yaitu :
+Model ANN yang dihasilkan memiiliki MSE sebesar 0.007782708362124884
+Model SVR Linear yang dihasilkan memiliki MSE sebesar 0.0069007297115937696
+Model SVR Non-Linear yang dihasilkan memiliki MSE sebesar 0.005730613337438222
+
+Berdasarkan output tersebut dapat dilihat bahwa model SVR menghasilkan model yang lebih baik daripada SVR. 
