@@ -72,9 +72,13 @@ Link sumber dataset : https://archive.ics.uci.edu/dataset/545/rice+cammeo+and+os
     
 #### Perbandingan Hasil Akurasi 
 Hasil akurasi menggunakan metric evaluasi akurasi setelah model selesai dibangun yaitu :
+
 Model ANN yang dihasilkan memiiliki akurasi sebesar 0.9243
+
 Model SVM Linear yang dihasilkan memiliki akurasi sebesar 0.9243
+
 Model SVM Non-Linear yang dihasilkan memiliki akurasi sebesar 0.9251
+
 
 Saat sedang berlangsungnya training model ANN terdapat beberapa perubahan akurasi yaitu
 
@@ -140,8 +144,12 @@ Link Sumber Dataset : https://www.kaggle.com/datasets/fedesoriano/stroke-predict
     
 #### Perbandingan Hasil Akurasi 
 Hasil akurasi menggunakan metric evaluasi MSE setelah model selesai dibangun yaitu :
+
 Model ANN yang dihasilkan memiiliki MSE sebesar 0.007782708362124884
+
 Model SVR Linear yang dihasilkan memiliki MSE sebesar 0.0069007297115937696
+
 Model SVR Non-Linear yang dihasilkan memiliki MSE sebesar 0.005730613337438222
+
 
 Berdasarkan output tersebut dapat dilihat bahwa model SVR menghasilkan model yang lebih baik daripada SVR. 
